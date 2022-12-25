@@ -3,7 +3,7 @@ import time
 
 language = ""
 
-def setting(language):
+def setting():
     if OOption == "st":
         os.system("clear")
         print(f"""
