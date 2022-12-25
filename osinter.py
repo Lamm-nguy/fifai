@@ -1,50 +1,7 @@
 import os
 import time
 
-language = ""
-
-def setting():
-    if OOption == "st":
-        os.system("clear")
-        print(f"""
-                                        ,----,       ,----,                                  
-                                        ,/   .`|     ,/   .`|                 ,--.             
-            .--.--.       ,---,.    ,`   .'  :   ,`   .'  :   ,---,       ,--.'|  ,----..    
-            /  /    '.   ,'  .' |  ;    ;     / ;    ;     /,`--.' |   ,--,:  : | /   /   \   
-            |  :  /`. / ,---.'   |.'___,/    ,'.'___,/    ,' |   :  :,`--.'`|  ' :|   :     :  
-            ;  |  |--`  |   |   .'|    :     | |    :     |  :   |  '|   :  :  | |.   |  ;. /  
-            |  :  ;_    :   :  |-,;    |.';  ; ;    |.';  ;  |   :  |:   |   \ | :.   ; /--`   
-            \  \    `. :   |  ;/|`----'  |  | `----'  |  |  '   '  ;|   : '  '; |;   | ;  __  
-            `----.   \|   :   .'    '   :  ;     '   :  ;  |   |  |'   ' ;.    ;|   : |.' .' 
-            __ \  \  ||   |  |-,    |   |  '     |   |  '  '   :  ;|   | | \   |.   | '_.' : 
-            /  /`--'  /'   :  ;/|    '   :  |     '   :  |  |   |  ''   : |  ; .''   ; : \  | 
-            '--'.     / |   |    \    ;   |.'      ;   |.'   '   :  ||   | '`--'  '   | '/  .' 
-            `--'---'  |   :   .'    '---'        '---'     ;   |.' '   : |      |   :    /   
-                        |   | ,'                             '---'   ;   |.'       \   \ .'    
-                        `----'                                       '---'          `---`     """) 
-        print("Welcome to the setting pages!")
-        print("1. Language")
-        print("2. Speak")
-        stp = input("> ")
-        if stp == "1":
-            print("1: Vietnamese")
-            print("2: English")
-            lh = input("Choose: ")
-            if lh == "1":
-                language = "vi"
-            if lh == "2":
-                language = "en"
-            else: 
-                print("invalid option!")
-        if stp == "2":
-            print("1. ON")
-            print("2. OFF")
-            tga = input("> ")
-            if tga == "1":
-                spk = True
-            if tga == "2":
-                spk = False
-                                                                                   
+language = ""                                                    
 
 
 def speak(text):
@@ -224,7 +181,48 @@ def Main():
                 ███    ███    ▄█    ███ ███  ███   ███     ███       ███    ███   ███    ███ 
        `         ▀██████▀   ▄████████▀  █▀    ▀█   █▀     ▄████▀     ██████████   ███    ███ """)
             os.system("cd PhoneNumber-OSINT && python phonenumber_osint.py")
-        setting()
+	
+def setting():
+    if OOption == "st":
+        os.system("clear")
+        print(f"""
+                                        ,----,       ,----,                                  
+                                        ,/   .`|     ,/   .`|                 ,--.             
+            .--.--.       ,---,.    ,`   .'  :   ,`   .'  :   ,---,       ,--.'|  ,----..    
+            /  /    '.   ,'  .' |  ;    ;     / ;    ;     /,`--.' |   ,--,:  : | /   /   \   
+            |  :  /`. / ,---.'   |.'___,/    ,'.'___,/    ,' |   :  :,`--.'`|  ' :|   :     :  
+            ;  |  |--`  |   |   .'|    :     | |    :     |  :   |  '|   :  :  | |.   |  ;. /  
+            |  :  ;_    :   :  |-,;    |.';  ; ;    |.';  ;  |   :  |:   |   \ | :.   ; /--`   
+            \  \    `. :   |  ;/|`----'  |  | `----'  |  |  '   '  ;|   : '  '; |;   | ;  __  
+            `----.   \|   :   .'    '   :  ;     '   :  ;  |   |  |'   ' ;.    ;|   : |.' .' 
+            __ \  \  ||   |  |-,    |   |  '     |   |  '  '   :  ;|   | | \   |.   | '_.' : 
+            /  /`--'  /'   :  ;/|    '   :  |     '   :  |  |   |  ''   : |  ; .''   ; : \  | 
+            '--'.     / |   |    \    ;   |.'      ;   |.'   '   :  ||   | '`--'  '   | '/  .' 
+            `--'---'  |   :   .'    '---'        '---'     ;   |.' '   : |      |   :    /   
+                        |   | ,'                             '---'   ;   |.'       \   \ .'    
+                        `----'                                       '---'          `---`     """) 
+        print("Welcome to the setting pages!")
+        print("1. Language")
+        print("2. Speak")
+        stp = input("> ")
+        if stp == "1":
+            print("1: Vietnamese")
+            print("2: English")
+            lh = input("Choose: ")
+            if lh == "1":
+                language = "vi"
+            if lh == "2":
+                language = "en"
+            else: 
+                print("invalid option!")
+        if stp == "2":
+            print("1. ON")
+            print("2. OFF")
+            tga = input("> ")
+            if tga == "1":
+                spk = True
+            if tga == "2":
+                spk = False
             
 try:
     Main()
