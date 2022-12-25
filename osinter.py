@@ -181,8 +181,6 @@ def Main():
                 ███    ███    ▄█    ███ ███  ███   ███     ███       ███    ███   ███    ███ 
        `         ▀██████▀   ▄████████▀  █▀    ▀█   █▀     ▄████▀     ██████████   ███    ███ """)
             os.system("cd PhoneNumber-OSINT && python phonenumber_osint.py")
-	
-def setting():
     if OOption == "st":
         os.system("clear")
         print(f"""
