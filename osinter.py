@@ -8,7 +8,9 @@ import os
 import time
 import playsound
 
-def setting():
+language = ""
+
+def setting(language):
     if OOption == "st":
         os.system("clear")
         print(f"""
