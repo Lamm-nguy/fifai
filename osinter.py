@@ -87,10 +87,6 @@ time.sleep(0.1)
 loadedscr()
 time.sleep(0.1)
 os.system("clear")
-if language == "en":
-    speak("Loaded!")
-else:
-    speak("Tải xong!")
 
 
 
