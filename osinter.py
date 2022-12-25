@@ -53,16 +53,16 @@ def setting():
 
 
 def speak(text):
-    if language == "en":
-        tts = gTTS(text=text, lang='en')
-    else:
-    	tts = gTTS(text=text, lang='vi')
+	if language == "en":
+		tts = gTTS(text=text, lang='en')
+	else:
+		tts = gTTS(text=text, lang='vi')
 	filename = 'voice.mp3'
 	tts.save(filename)
 	playsound.playsound(filename)
 
 def loadedscr():
-    print(f"""  
+	print(f"""  
  ___       ________  ________  _______   ________  ________  ___
 |\  \     |\   __  \|\   __  \|\   ___ \|\  ___ \ |\   ___ \|\  \      
 \ \  \    \ \  \|\  \ \  \|\  \ \  \_|\ \ \   __/|\ \  \_|\ \ \  \     
