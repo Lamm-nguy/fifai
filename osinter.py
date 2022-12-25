@@ -56,7 +56,7 @@ def speak(text):
     if language == "en":
         tts = gTTS(text=text, lang='en')
     else:
-        tts = gTTS(text=text, lang='vi')
+    	tts = gTTS(text=text, lang='vi')
 	filename = 'voice.mp3'
 	tts.save(filename)
 	playsound.playsound(filename)
