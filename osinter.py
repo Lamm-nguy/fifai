@@ -1,12 +1,5 @@
 import os
 import time
-import speech_recognition as sr
-import speech_recognition as sr
-from gtts import gTTS
-from datetime import date
-import os
-import time
-import playsound
 
 language = ""
 
@@ -131,10 +124,6 @@ def OBanner():
         print("    7     | PhoneNumber..| Tìm thông tin của mục tiêu bằng Số điện thoại   |")
         print("----------------------------------------------------------------------------")
         print("st cho Trang Cài đặt")
-    if language == "en":
-        speak("This is some of option you can choose, if you want to go to setting pages, press st")
-    else:
-        speak("Đây là một số lựa chọn bạn có thể dùng, nếu bạn muốn đi đến trang cài đặt, nhấn st")
     
 def Main():
     OBanner()
@@ -153,10 +142,6 @@ def Main():
        `         ▀██████▀   ▄████████▀  █▀    ▀█   █▀     ▄████▀     ██████████   ███    ███ """)
             tg = input("TARGET: ")
             os.system("cd blackbird && python blackbird.py -u " + tg)
-            if language == "en":
-                speak("select a target")
-            else:
-                speak("chọn một mục tiêu")
         if OOption == "2":
             os.system("clear")
             print(f"""
@@ -171,10 +156,6 @@ def Main():
                 ░ ░        ░   ░           ░             ░  ░   ░     """)
             tg2 = input("TARGET: ")
             os.system("cd Cloudmare && python Cloudmare.py -u " + tg2)
-            if language == "en":
-                speak("select a target")
-            else:
-                speak("chọn một mục tiêu")
         if OOption == "3":
             os.system("clear")
             print(f"""
@@ -188,10 +169,6 @@ def Main():
        `         ▀██████▀   ▄████████▀  █▀    ▀█   █▀     ▄████▀     ██████████   ███    ███ """)
             tg3 = input("TARGET: ")
             os.system("cd holehe && python setup.py install && holehe " + tg3)
-            if language == "en":
-                speak("select a target")
-            else:
-                speak("chọn một mục tiêu")
         if OOption == "4":
             os.system("clear")
             print(f"""
@@ -206,10 +183,6 @@ def Main():
                 ░ ░        ░   ░           ░             ░  ░   ░     """)
             tg4 = input("TARGET: ")
             os.system("cd osgint && python osgint.py -e " + tg4)
-            if language == "en":
-                speak("select a target")
-            else:
-                speak("chọn một mục tiêu")
         if OOption == "5":
             os.system("clear")
             print(f"""
@@ -225,10 +198,6 @@ def Main():
             api = input("API KEY: ")
             os.system("cd ZoomEye-python && python setup.py install && zoomeye init -apikey " + api)
             os.system("cd ZoomEye-python && zoomeye search " + tg5)
-            if language == "en":
-                speak("select a target")
-            else:
-                speak("chọn một mục tiêu")
         if OOption == "6":
             os.system("clear")
             print(f"""
@@ -243,10 +212,6 @@ def Main():
             tg6 = input("TARGET: ")
             os.system("cd GHunt && python main.py login")
             os.system("cd GHunt && python main.py email " + tg6)
-            if language == "en":
-                speak("select a target")
-            else:
-                speak("chọn một mục tiêu")
         if OOption == "7":
             os.system("clear")
             print(f"""
