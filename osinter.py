@@ -4,14 +4,6 @@ import time
 language = ""                                                    
 
 
-def speak(text):
-	if language == "en":
-		tts = gTTS(text=text, lang='en')
-	else:
-		tts = gTTS(text=text, lang='vi')
-	filename = 'voice.mp3'
-	tts.save(filename)
-	playsound.playsound(filename)
 
 def loadedscr():
 	print(f"""  
@@ -31,11 +23,11 @@ os.system("pip install -r requirements.txt")
 os.system("clear")
 time.sleep(2)
 loadedscr()
-time.sleep(0.1)
+time.sleep(1)
 os.system("clear")
-time.sleep(0.1)
+time.sleep(1)
 loadedscr()
-time.sleep(0.1)
+time.sleep(1)
 os.system("clear")
 
 
