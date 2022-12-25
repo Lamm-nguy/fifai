@@ -35,6 +35,7 @@ os.system("clear")
 
 
 def OBanner():
+	language = ""
     print(f"""
                                                
            _,.---._      ,-,--.   .=-.-..-._        ,--.--------.    ,----.               
